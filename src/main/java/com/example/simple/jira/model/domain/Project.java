@@ -6,16 +6,16 @@ import com.example.simple.jira.model.repository.TaskRepository;
  * Immutable representation of a Jira-like project
  *
  * Project instances carry only identifier and name, while related tasks are
- * managed by {@link TaskRepository}.
+ * managed by {@link TaskRepository}
  *
  * @author spacedesk2
  * @version 1.0
  */
 public final class Project {
 
-    /** Identifier of the project. */
+    /** Identifier of the project */
     private final int projectId;
-    /** Human readable project name. */
+    /** Human readable project name */
     private final String projectName;
 
     /**

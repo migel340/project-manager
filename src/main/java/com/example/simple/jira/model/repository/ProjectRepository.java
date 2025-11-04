@@ -19,19 +19,19 @@ import com.example.simple.jira.model.domain.Project;
  * @author spacedesk2
  * @version 1.0
  */
-public class ProjectRepository {
+public class ProjectRepository implements ProjectStore {
 
     /**
      * Explicit no-arg constructor. Present to provide a documented public
-     * constructor so Javadoc does not emit a "default constructor" warning.
+     * constructor so Javadoc does not emit a "default constructor" warning
      */
     public ProjectRepository() {
-        // Intentionally empty - repository is in-memory and needs no config.
+        // Intentionally empty - repository is in-memory and needs no config
     }
 
-    /** Storage for projects indexed by identifier. */
+    /** Storage for projects indexed by identifier */
     private final Map<Integer, Project> projects = new ConcurrentHashMap<>();
-    /** Generator for project identifiers. */
+    /** Generator for project identifiers */
     private final AtomicInteger nextProjectId = new AtomicInteger(1);
 
     /**
@@ -46,7 +46,7 @@ public class ProjectRepository {
     }
 
     /**
-     * Retrieves a project by identifier.
+    * Retrieves a project by identifier
      *
      * @param projectId identifier of the desired project
      * @return immutable project instance

@@ -24,13 +24,13 @@ import java.util.Scanner;
  */
 public class Controller {
 
-    /** View responsible for user interaction. */
+    /** View responsible for user interaction */
     private final View view;
-    /** Repository providing access to projects. */
+    /** Repository providing access to projects */
     private final ProjectRepository projectRepository;
-    /** Repository providing access to tasks. */
+    /** Repository providing access to tasks */
     private final TaskRepository taskRepository;
-    /** Scanner reading user input from the console. */
+    /** Scanner reading user input from the console */
     private final Scanner scanner;
 
     /**
@@ -93,7 +93,7 @@ public class Controller {
                         final int projectId = parseProjectId(input);
                         return projectRepository.findById(projectId);
                     } catch (NumberFormatException ex) {
-                        view.displayError("Please enter a valid option or project id.");
+                        view.displayError("Please enter a valid option or project id");
                     } catch (ModelOperationException ex) {
                         view.displayError(ex.getMessage());
                     }
@@ -164,7 +164,7 @@ public class Controller {
     private void displayTasks(final Project project) {
         final List<Task> tasks = taskRepository.findByProject(project.getProjectId());
         if (tasks.isEmpty()) {
-            view.displayMessage("No tasks available for this project.");
+            view.displayMessage("No tasks available for this project");
         } else {
             view.displayTasks(tasks);
         }
@@ -196,7 +196,7 @@ public class Controller {
             final int taskId = readInt("Enter task id:");
             final TaskStatus status = readStatus();
             taskRepository.updateTaskStatus(project.getProjectId(), taskId, status);
-            view.displayMessage("Task status updated.");
+            view.displayMessage("Task status updated");
         } catch (ModelOperationException ex) {
             view.displayError(ex.getMessage());
         }
@@ -210,7 +210,7 @@ public class Controller {
             final int taskId = readInt("Enter task id:");
             final TaskPriority priority = readPriority();
             taskRepository.updateTaskPriority(project.getProjectId(), taskId, priority);
-            view.displayMessage("Task priority updated.");
+            view.displayMessage("Task priority updated");
         } catch (ModelOperationException ex) {
             view.displayError(ex.getMessage());
         }
@@ -309,7 +309,7 @@ public class Controller {
     }
 
     /**
-     * Reads task status selection from the input stream.
+     * Reads task status selection from the input stream
      *
      * @return task status specified by the user
      */

@@ -7,11 +7,11 @@ import com.example.simple.jira.model.repository.TaskRepository;
 import com.example.simple.jira.view.View;
 
 /**
- * Application entry point creating dependencies and launching the controller.
+ * Application entry point creating dependencies and launching the controller
  *
  * Accepts up to three optional command-line arguments: a project name and an
  * optional initial task title and description. When omitted the application
- * switches to interactive mode and asks the user for required data.
+ * switches to interactive mode and asks the user for required data
  *
  * @author spacedesk2
  * @version 1.0
@@ -23,8 +23,13 @@ public final class SimpleJira {
 
     /**
      * Bootstraps the MVC stack and starts the controller loop, args parser
+     * Args order:
+     * 1. Project name
+     * 2. Initial task title (optional)
+     * 3. Initial task description (optional)
      *
      * @param args optional command line arguments described in the class documentation
+     * 
      */
     public static void main(final String[] args) {
         final View view = new View();

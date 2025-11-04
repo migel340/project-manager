@@ -22,13 +22,13 @@ import com.example.simple.jira.model.exceptions.ModelOperationException;
  * @author spacedesk2
  * @version 1.0
  */
-public class TaskRepository {
+public class TaskRepository implements TaskStore {
 
-    /** Storage for tasks grouped by project identifier. */
+    /** Storage for tasks grouped by project identifier */
     private final Map<Integer, List<Task>> tasksByProject = new ConcurrentHashMap<>();
-    /** Generator for task identifiers. */
+    /** Generator for task identifiers */
     private final AtomicInteger nextTaskId = new AtomicInteger(1);
-    /** Repository used to validate project existence. */
+    /** Repository used to validate project existence */
     private final ProjectRepository projectRepository;
 
     /**
@@ -116,7 +116,7 @@ public class TaskRepository {
     }
 
     /**
-     * Ensures the selected project contains at least one task.
+    * Ensures the selected project contains at least one task
      *
      * @param projectId identifier of the owning project
      * @return immutable snapshot of current tasks
@@ -132,7 +132,7 @@ public class TaskRepository {
     }
 
     /**
-     * Removes a task from the selected project
+    * Removes a task from the selected project
      *
      * @param projectId identifier of the owning project
      * @param taskId identifier of the task to be removed
@@ -160,7 +160,7 @@ public class TaskRepository {
     }
 
     /**
-     * Updates a single task instance and stores the modified list back in the repository.
+    * Updates a single task instance and stores the modified list back in the repository
      */
     private void updateTask(final int projectId, final int taskId, final Function<Task, Task> transformer) {
         final List<Task> existing = requireTasks(projectId);

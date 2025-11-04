@@ -15,13 +15,13 @@ import java.util.List;
  * @author spacedesk2
  * @version 1.0
  */
-public class View {
+public class View implements AppView {
 
     /**
-     * Explicit no-arg constructor to provide a documented constructor for Javadoc.
+     * Explicit no-arg constructor to provide a documented constructor for Javadoc
      */
     public View() {
-        // Intentionally empty; view has no runtime state.
+        // Intentionally empty; view has no runtime state
     }
 
     /**
@@ -115,14 +115,14 @@ public class View {
     }
 
     /**
-     * Displays task status selection instructions.
+     * Displays task status selection instructions
      */
     public void displayStatusSelection() {
         displayMessage("\nSelect status: 1=TODO, 2=IN_PROGRESS, 3=DONE");
     }
 
     /**
-     * Displays task priority selection instructions.
+     * Displays task priority selection instructions
      */
     public void displayPrioritySelection() {
         displayMessage("\nSelect priority: 1=NOT_SET, 2=LOW, 3=MEDIUM, 4=HIGH");
