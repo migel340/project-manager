@@ -14,10 +14,26 @@ import java.util.Locale;
 import java.util.Scanner;
 
 /**
- * Coordinates the flow between the view and the domain model
+ * Coordinates the flow between the view and the domain model.
  *
- * Controller keeps the application running, handles user decisions, and
- * reacts to domain errors exposed via {@link ModelOperationException}
+ * <p>The {@code Controller} drives the console UI, translates user choices
+ * into domain operations and presents any domain errors to the {@code View}.
+ * It is intentionally thin — orchestration only — and delegates persistence
+ * to repository implementations such as {@link com.example.simple.jira.model.repository.ProjectRepository}
+ * and {@link com.example.simple.jira.model.repository.TaskRepository}.
+ *
+ * <p>Domain-level exceptions thrown by repository or model methods are
+ * represented by {@link ModelOperationException} and are caught and displayed
+ * by this class.
+ *
+ * @see com.example.simple.jira.model.repository.ProjectRepository
+ * @see com.example.simple.jira.model.repository.TaskRepository
+ * @see com.example.simple.jira.model.domain.Project
+ * @see com.example.simple.jira.model.domain.Task
+ * @see com.example.simple.jira.model.domain.TaskStatus
+ * @see com.example.simple.jira.model.domain.TaskPriority
+ * @see com.example.simple.jira.model.exceptions.ModelOperationException
+ * @see com.example.simple.jira.view.View
  *
  * @author spacedesk2
  * @version 1.0

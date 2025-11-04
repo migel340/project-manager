@@ -16,6 +16,16 @@ import com.example.simple.jira.model.domain.Project;
  * Repository generates identifiers for projects and guarantees that returned
  * model objects remain immutable
  *
+ * This implementation focuses on project lifecycle operations. Task
+ * management is delegated to {@link com.example.simple.jira.model.repository.TaskStore}
+ * implementations and this class will throw
+ * {@link com.example.simple.jira.model.exceptions.ModelOperationException}
+ * when requested operations cannot be completed.
+ *
+ * @see com.example.simple.jira.model.domain.Project
+ * @see com.example.simple.jira.model.repository.ProjectStore
+ * @see com.example.simple.jira.model.repository.TaskStore
+ * @see com.example.simple.jira.model.exceptions.ModelOperationException
  * @author spacedesk2
  * @version 1.0
  */

@@ -17,10 +17,17 @@ import com.example.simple.jira.model.exceptions.ModelOperationException;
  * In-memory repository managing tasks assigned to projects
  *
  * The repository delegates project existence validation to
- * {@link ProjectRepository} and keeps task data immutable
+ * {@link com.example.simple.jira.model.repository.ProjectStore#findById(int)} and
+ * keeps task data immutable
+ *
+ * See {@link com.example.simple.jira.model.domain.Task} for the task model and
+ * {@link com.example.simple.jira.model.exceptions.ModelOperationException} for
+ * domain errors thrown by this class
  *
  * @author spacedesk2
  * @version 1.0
+ * @see com.example.simple.jira.model.repository.ProjectStore
+ * @see com.example.simple.jira.model.repository.TaskStore
  */
 public class TaskRepository implements TaskStore {
 
@@ -126,7 +133,7 @@ public class TaskRepository implements TaskStore {
         projectRepository.findById(projectId);
         final List<Task> existing = tasksByProject.get(projectId);
         if (existing == null || existing.isEmpty()) {
-            throw new ModelOperationException("\nNo tasks found in project " + projectId);
+            throw new ModelOperationException("No tasks found in project " + projectId);
         }
         return Collections.unmodifiableList(new ArrayList<>(existing));
     }
