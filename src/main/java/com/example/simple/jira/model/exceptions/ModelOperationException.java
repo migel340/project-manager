@@ -1,4 +1,4 @@
-package com.example.simple.jira.model;
+package com.example.simple.jira.model.exceptions;
 
 /**
  * Signals issues while manipulating immutable model objects
@@ -8,7 +8,7 @@ package com.example.simple.jira.model;
  */
 public class ModelOperationException extends RuntimeException {
 
-    /** Serialization identifier. */
+    /** Serialization identifier */
     private static final long serialVersionUID = 1L;
 
     /**

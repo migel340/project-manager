@@ -1,4 +1,4 @@
-package com.example.simple.jira.model;
+package com.example.simple.jira.model.domain;
 
 /**
  * Enumeration representing the possible priorities of a task

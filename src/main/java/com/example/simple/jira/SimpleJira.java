@@ -1,4 +1,5 @@
 package com.example.simple.jira;
+
 import com.example.simple.jira.controller.Controller;
 import com.example.simple.jira.model.repository.ProjectRepository;
 import com.example.simple.jira.model.domain.Project;

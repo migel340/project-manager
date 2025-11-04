@@ -180,7 +180,7 @@ public class Controller {
         final String title = readNonEmptyLine("Enter task title:");
         final String description = readLine("Enter task description:");
         taskRepository.addTask(project.getProjectId(), title, description);
-        view.displayMessage("Task created successfully.");
+        view.displayMessage("Task created successfully");
         return project;
     }
 
@@ -224,7 +224,7 @@ public class Controller {
             final int taskId = readInt("Enter task id to rename:");
             final String newTitle = readNonEmptyLine("Enter new task title:");
             taskRepository.renameTask(project.getProjectId(), taskId, newTitle);
-            view.displayMessage("Task renamed.");
+            view.displayMessage("Task renamed");
         } catch (ModelOperationException ex) {
             view.displayError(ex.getMessage());
         }
@@ -237,7 +237,7 @@ public class Controller {
             final int taskId = readInt("Enter task id to change description:");
             final String newDescription = readLine("Enter new task description:");
             taskRepository.updateTaskDescription(project.getProjectId(), taskId, newDescription);
-            view.displayMessage("Task description updated.");
+            view.displayMessage("Task description updated");
         } catch (ModelOperationException ex) {
             view.displayError(ex.getMessage());
         }
@@ -255,7 +255,7 @@ public class Controller {
             taskRepository.requireTasks(project.getProjectId());
             final int taskId = readInt("Enter task id to delete:");
             taskRepository.deleteTask(project.getProjectId(), taskId);
-            view.displayMessage("Task removed.");
+            view.displayMessage("Task removed");
         } catch (ModelOperationException ex) {
             view.displayError(ex.getMessage());
         }
@@ -273,7 +273,7 @@ public class Controller {
             if (!line.isEmpty()) {
                 return line;
             }
-            view.displayError("Value cannot be empty.");
+            view.displayError("Value cannot be empty");
         }
     }
 
@@ -325,7 +325,7 @@ public class Controller {
                 case 3:
                     return TaskStatus.DONE;
                 default:
-                    view.displayError("Unknown option. Please choose between 1 and 3.");
+                    view.displayError("Unknown option. Please choose between 1 and 3");
             }
         }
     }
@@ -344,7 +344,7 @@ public class Controller {
                 case 4:
                     return TaskPriority.HIGH;
                 default:
-                    view.displayError("Unknown option. Please choose between 1 and 4.");
+                    view.displayError("Unknown option. Please choose between 1 and 4");
             }
         }
     }

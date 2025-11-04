@@ -1,4 +1,4 @@
-package com.example.simple.jira.model;
+package com.example.simple.jira.model.domain;
 
 /**
  * Immutable representation of a single task within a project

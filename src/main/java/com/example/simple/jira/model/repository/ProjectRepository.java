@@ -1,10 +1,12 @@
 package com.example.simple.jira.model.repository;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+
 import com.example.simple.jira.model.exceptions.ModelOperationException;
 import com.example.simple.jira.model.domain.Project;;
 

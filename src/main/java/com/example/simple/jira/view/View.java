@@ -1,8 +1,9 @@
 package com.example.simple.jira.view;
 
-import com.example.simple.jira.model.Project;
-import com.example.simple.jira.model.Task;
-import com.example.simple.jira.model.TaskStatus;
+import com.example.simple.jira.model.domain.Project;
+import com.example.simple.jira.model.domain.Task;
+import com.example.simple.jira.model.domain.TaskStatus;
+
 import java.util.List;
 
 /**

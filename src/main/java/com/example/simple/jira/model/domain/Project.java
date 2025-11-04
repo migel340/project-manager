@@ -1,4 +1,6 @@
-package com.example.simple.jira.model;
+package com.example.simple.jira.model.domain;
+
+import com.example.simple.jira.model.repository.TaskRepository;
 
 /**
  * Immutable representation of a Jira-like project
