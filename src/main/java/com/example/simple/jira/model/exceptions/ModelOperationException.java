@@ -3,7 +3,7 @@ package com.example.simple.jira.model.exceptions;
 /**
  * Signals issues while manipulating immutable model objects
  *
- * @author spacedesk2
+ * @author michalkubina
  * @version 1.0
  */
 public class ModelOperationException extends RuntimeException {

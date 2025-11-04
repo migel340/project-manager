@@ -219,7 +219,12 @@ public class Controller {
         return project;
     }
 
-
+    /**
+     * Updates the priority of a task
+     *
+     * @param project currently selected project
+     * @return updated project instance
+     */
     private Project changeTaskPriority(final Project project) {
         try {
             taskRepository.requireTasks(project.getProjectId());
@@ -233,7 +238,12 @@ public class Controller {
         return project;
     }
 
-
+    /**
+     * Renames a task within the project
+     *
+     * @param project currently selected project
+     * @return updated project instance
+     */
     private Project renameTask(final Project project) {
         try {
             taskRepository.requireTasks(project.getProjectId());
@@ -247,6 +257,13 @@ public class Controller {
         return project;
     }
 
+
+    /**
+     * Changes the description of a task
+     *
+     * @param project currently selected project
+     * @return updated project instance
+     */
     private Project changeTaskDescription(final Project project) {
         try {
             taskRepository.requireTasks(project.getProjectId());
@@ -346,6 +363,11 @@ public class Controller {
         }
     }
 
+    /**
+     * Reads task priority selection from the input stream
+     *
+     * @return task priority specified by the user
+     */
     private TaskPriority readPriority() {
         view.displayPrioritySelection();
         while (true) {

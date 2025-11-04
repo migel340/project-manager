@@ -23,7 +23,7 @@ public final class SimpleJira {
 
     /**
      * Bootstraps the MVC stack and starts the controller loop, args parser
-     * Args order:
+     * args order:
      * 1. Project name
      * 2. Initial task title (optional)
      * 3. Initial task description (optional)

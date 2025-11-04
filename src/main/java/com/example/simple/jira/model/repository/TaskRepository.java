@@ -168,7 +168,10 @@ public class TaskRepository implements TaskStore {
 
     /**
     * Updates a single task instance and stores the modified list back in the repository
-     */
+    * @param projectId identifier of the owning project
+    * @param taskId identifier of the task to be updated
+    * @param transformer function that produces a modified task instance
+    */
     private void updateTask(final int projectId, final int taskId, final Function<Task, Task> transformer) {
         final List<Task> existing = requireTasks(projectId);
 
