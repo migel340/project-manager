@@ -13,7 +13,7 @@ import com.example.simple.jira.view.View;
  * optional initial task title and description. When omitted the application
  * switches to interactive mode and asks the user for required data
  *
- * @author spacedesk2
+ * @author michalkubina
  * @version 1.0
  */
 public final class SimpleJira {

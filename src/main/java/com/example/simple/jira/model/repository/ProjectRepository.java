@@ -26,7 +26,7 @@ import com.example.simple.jira.model.domain.Project;
  * @see com.example.simple.jira.model.repository.ProjectStore
  * @see com.example.simple.jira.model.repository.TaskStore
  * @see com.example.simple.jira.model.exceptions.ModelOperationException
- * @author spacedesk2
+ * @author michalkubina
  * @version 1.0
  */
 public class ProjectRepository implements ProjectStore {

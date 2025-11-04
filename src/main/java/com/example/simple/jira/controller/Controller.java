@@ -35,7 +35,7 @@ import java.util.Scanner;
  * @see com.example.simple.jira.model.exceptions.ModelOperationException
  * @see com.example.simple.jira.view.View
  *
- * @author spacedesk2
+ * @author michalkubina
  * @version 1.0
  */
 public class Controller {

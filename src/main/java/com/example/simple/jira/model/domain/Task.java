@@ -3,7 +3,7 @@ package com.example.simple.jira.model.domain;
 /**
  * Immutable representation of a single task within a project
  *
- * @author spacedesk2
+ * @author michalkubina
  * @version 1.0
  */
 public final class Task {

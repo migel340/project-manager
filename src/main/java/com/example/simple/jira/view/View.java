@@ -12,7 +12,7 @@ import java.util.List;
  * The view renders projects, tasks, and menus while delegating input
  * collection to the controller
  *
- * @author spacedesk2
+ * @author michalkubina
  * @version 1.0
  */
 public class View implements AppView {

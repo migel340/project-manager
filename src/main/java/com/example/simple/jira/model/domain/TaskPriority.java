@@ -2,7 +2,7 @@ package com.example.simple.jira.model.domain;
 
 /**
  * Enumeration representing the possible priorities of a task
- * @author spacedesk2
+ * @author michalkubina
  * @version 1.0
  */
 

@@ -24,7 +24,7 @@ import com.example.simple.jira.model.exceptions.ModelOperationException;
  * {@link com.example.simple.jira.model.exceptions.ModelOperationException} for
  * domain errors thrown by this class
  *
- * @author spacedesk2
+ * @author michalkubina
  * @version 1.0
  * @see com.example.simple.jira.model.repository.ProjectStore
  * @see com.example.simple.jira.model.repository.TaskStore

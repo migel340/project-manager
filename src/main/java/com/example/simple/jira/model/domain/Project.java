@@ -8,7 +8,7 @@ import com.example.simple.jira.model.repository.TaskRepository;
  * Project instances carry only identifier and name, while related tasks are
  * managed by {@link TaskRepository}
  *
- * @author spacedesk2
+ * @author michalkubina
  * @version 1.0
  */
 public final class Project {
