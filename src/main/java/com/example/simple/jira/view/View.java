@@ -18,6 +18,13 @@ import java.util.List;
 public class View {
 
     /**
+     * Explicit no-arg constructor to provide a documented constructor for Javadoc.
+     */
+    public View() {
+        // Intentionally empty; view has no runtime state.
+    }
+
+    /**
      * Prints a message to the standard output
      *
      * @param message text that should be displayed

@@ -1,0 +1,50 @@
+-J-Duser.language=
+-J-Duser.country=
+@options
+@packages
+--no-fonts
+-encoding
+'UTF-8'
+-protected
+--release
+24
+-sourcepath
+'/Users/spacedesk2/NetBeansProjects/simple-jira/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'simple-jira 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'simple-jira 1.0-SNAPSHOT API'
+com.example.simple.jira
+com.example.simple.jira.controller
+com.example.simple.jira.model.repository
+com.example.simple.jira.model.exceptions
+com.example.simple.jira.model.domain
+com.example.simple.jira.view
+/Users/spacedesk2/NetBeansProjects/simple-jira/src/main/java = 1762286911666
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/tag-search-index.js = 1762288190464
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/overview-tree.html = 1762288190457
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/module-search-index.js = 1762288190463
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/index.html = 1762288190458
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/package-search-index.js = 1762288190463
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/serialized-form.html = 1762288190441
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/index-all.html = 1762288190469
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/allpackages-index.html = 1762288190463
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/member-search-index.js = 1762288190463
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/overview-summary.html = 1762288190470
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/help-doc.html = 1762288190471
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/javadoc.sh = 1762288079115
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/element-list = 1762288190427
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/search.html = 1762288190470
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/allclasses-index.html = 1762288190462
+/Users/spacedesk2/NetBeansProjects/simple-jira/target/reports/apidocs/type-search-index.js = 1762288190463

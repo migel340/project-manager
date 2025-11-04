@@ -8,7 +8,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import com.example.simple.jira.model.exceptions.ModelOperationException;
-import com.example.simple.jira.model.domain.Project;;
+import com.example.simple.jira.model.domain.Project;
 
 /**
  * In-memory repository responsible for managing projects
@@ -20,6 +20,14 @@ import com.example.simple.jira.model.domain.Project;;
  * @version 1.0
  */
 public class ProjectRepository {
+
+    /**
+     * Explicit no-arg constructor. Present to provide a documented public
+     * constructor so Javadoc does not emit a "default constructor" warning.
+     */
+    public ProjectRepository() {
+        // Intentionally empty - repository is in-memory and needs no config.
+    }
 
     /** Storage for projects indexed by identifier. */
     private final Map<Integer, Project> projects = new ConcurrentHashMap<>();

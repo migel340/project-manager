@@ -1,0 +1,6 @@
+com.example.simple.jira
+com.example.simple.jira.controller
+com.example.simple.jira.model.domain
+com.example.simple.jira.model.exceptions
+com.example.simple.jira.model.repository
+com.example.simple.jira.view

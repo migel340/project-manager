@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.example.simple.jira"},{"l":"com.example.simple.jira.controller"},{"l":"com.example.simple.jira.model.domain"},{"l":"com.example.simple.jira.model.exceptions"},{"l":"com.example.simple.jira.model.repository"},{"l":"com.example.simple.jira.view"}];updateSearchResults();

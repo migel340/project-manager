@@ -7,7 +7,10 @@ package com.example.simple.jira.model.domain;
  */
 
 public enum TaskStatus {
+    /** Task has not been started yet. */
     TODO,
+    /** Task is currently in progress. */
     IN_PROGRESS,
+    /** Task has been completed. */
     DONE
 }

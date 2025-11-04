@@ -9,19 +9,12 @@ import com.example.simple.jira.view.View;
 /**
  * Application entry point creating dependencies and launching the controller.
  *
- * Command-line parameters order:
- * 
- * args [0] – optional project name created on startup.
- * args [1] – optional initial task title (requires project name).
- * args [2] – optional initial task description (requires task title).
- * 
- *
- * If parameters are missing the application switches to interactive mode and
- * asks the user for the required data.
+ * Accepts up to three optional command-line arguments: a project name and an
+ * optional initial task title and description. When omitted the application
+ * switches to interactive mode and asks the user for required data.
  *
  * @author spacedesk2
  * @version 1.0
- * @param args optional command line parameters described above
  */
 public final class SimpleJira {
 

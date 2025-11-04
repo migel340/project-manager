@@ -7,8 +7,12 @@ package com.example.simple.jira.model.domain;
  */
 
 public enum TaskPriority {
+    /** Priority has not been set. */
     NOT_SET,
+    /** Low priority. */
     LOW,
+    /** Medium priority. */
     MEDIUM,
+    /** High priority. */
     HIGH
 }
