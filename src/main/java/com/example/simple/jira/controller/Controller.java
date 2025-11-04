@@ -16,13 +16,13 @@ import java.util.Scanner;
 /**
  * Coordinates the flow between the view and the domain model.
  *
- * <p>The {@code Controller} drives the console UI, translates user choices
+ * The {@code Controller} drives the console UI, translates user choices
  * into domain operations and presents any domain errors to the {@code View}.
  * It is intentionally thin — orchestration only — and delegates persistence
  * to repository implementations such as {@link com.example.simple.jira.model.repository.ProjectRepository}
  * and {@link com.example.simple.jira.model.repository.TaskRepository}.
  *
- * <p>Domain-level exceptions thrown by repository or model methods are
+ * Domain-level exceptions thrown by repository or model methods are
  * represented by {@link ModelOperationException} and are caught and displayed
  * by this class.
  *
