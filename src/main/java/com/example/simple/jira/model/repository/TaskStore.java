@@ -7,6 +7,9 @@ import java.util.List;
 
 /**
  * Persistence contract for tasks
+ *
+ * @author michalkubina
+ * @version 1.0
  */
 public interface TaskStore {
     /**

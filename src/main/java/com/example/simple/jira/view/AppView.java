@@ -6,6 +6,9 @@ import java.util.List;
 
 /**
  * UI contract used by Controller
+ *
+ * @author michalkubina
+ * @version 1.0
  */
 public interface AppView {
     /**

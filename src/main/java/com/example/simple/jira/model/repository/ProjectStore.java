@@ -5,6 +5,9 @@ import java.util.List;
 
 /**
  * Persistence contract for projects
+ *
+ * @author michalkubina
+ * @version 1.0
  */
 public interface ProjectStore {
     /**
