@@ -33,9 +33,9 @@ public final class SimpleJira {
      */
     public static void main(final String[] args) {
         final View view = new View();
-    final ProjectRepository projectRepository = new ProjectRepository();
-    final TaskRepository taskRepository = new TaskRepository(projectRepository);
-    final Controller controller = new Controller(view, projectRepository, taskRepository);
+        final ProjectRepository projectRepository = new ProjectRepository();
+        final TaskRepository taskRepository = new TaskRepository(projectRepository);
+        final Controller controller = new Controller(view, projectRepository, taskRepository);
 
         if (args.length > 0) {
             final String projectName = args[0];
