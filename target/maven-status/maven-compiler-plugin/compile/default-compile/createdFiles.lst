@@ -1,7 +1,0 @@
-com/example/simple/jira/controller/Controller.class
-com/example/simple/jira/SimpleJira.class
-com/example/simple/jira/model/Task.class
-com/example/simple/jira/model/ProjectRepository.class
-com/example/simple/jira/view/View.class
-com/example/simple/jira/model/TaskStatus.class
-com/example/simple/jira/model/Project.class
